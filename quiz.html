@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QUIZ!</title>
+    <script src="quiz.js"></script>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+<div class="topnav">
+    <a class="active" href="index.html" title="Home"><img src="img/home.png" height="23" width="32" alt="homeButton"/></a>
+    <a href="bintro.html" title="Brief Introduction"><b>Brief Introduction</b></a>
+    <a href="family.html" title="Family"><b>Family</b></a>
+    <a href="hobbies.html" title="Hobbies"><b>Hobbies</b></a>
+    <a href="animation.html" title="Animation"><b>Animation</b></a>
+</div>
+<style>
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {background-color: #ddd;}
+
+    .dropdown:hover .dropdown-content {display: block;}
+
+    .dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+
+<div class="dropdown">
+    <button class="dropbtn">1st Semester</button>
+    <div class="dropdown-content">
+        <a href="jminiproject.html" title="JavaProjects"><b>JavaProjects</b></a>
+        <a href="binary.html" title="Base Converter"><b>Base Converter</b></a>
+        <a href="calculator.html" title="JavaScript Calculator"><b>JavaScript Calculator</b></a>
+        <a href="madLibs.html" title="Mad Libs"><b>Mad-Libs</b></a>
+        <a href="quiz.html" title="Quiz"><b>Quiz!</b></a>
+    </div>
+</div>
+<form name="quiz">
+<div class="quiz">
+<br><br>
+Question 1: What 4 numbers come next? 0 1 1 2 3 5 8 _ _ _ _
+    <br><br>
+    <input type="text" name="a1">
+    <br><br>
+Question 2: What does the abbreviation, "hehs" stand for?
+    <br><br>
+    <input type="text" name="a2">
+    <br><br>
+Question 3: Do you grow a potato by planting a potato?
+    <br><br>
+    <input type="radio" name="a3" value="t">True
+    <input type="radio" name="a3" value="f">False
+    <br><br>
+Question 4: What is the fastest way to get home from school?
+    <br><br>
+    <input type="radio" name="a4" value="walking">Walking
+    <input type="radio" name="a4" value="driving">Driving<br><br>
+    <input type="radio" name="a4" value="biking">Biking
+    <input type="radio" name="a4" value="running">Running
+    <br><br>
+Question 5: If you have $3.50 at hoffman estates high school what can you buy at the cafeteria? (select all that apply)
+    <br><br>
+    <input type="checkbox" name="a5A" value="a"> A. 7 cookies<br>
+    <input type="checkbox" name="a5B" value="b"> B. 4 cookies<br>
+    <input type="checkbox" name="a5C" value="c"> C. 3 cookies & a pretzel w/ cheese<br>
+    <input type="checkbox" name="a5D" value="d"> D. 2 pretzel w/o cheese & a cookie<br>
+    <input type="checkbox" name="a5E" value="e"> E. 5 cookies & a pretzel w/ cheese<br>
+    <input type="checkbox" name="a5F" value="f"> F. 4 pretzels w/o cheese<br>
+    <br><br>
+Question 6: What is the 3rd, 16th, 21st, and 25th letter of the alphabet. (select all that apply)
+    <br><br>
+    <input type="checkbox" name="a6A" value="C"> A. 'H'<br>
+    <input type="checkbox" name="a6B" value="C"> B. 'C'<br>
+    <input type="checkbox" name="a6C" value="C"> C. 'I'<br>
+    <input type="checkbox" name="a6D" value="C"> D. 'P'<br>
+    <input type="checkbox" name="a6E" value="C"> E. 'E'<br>
+    <input type="checkbox" name="a6F" value="C"> F. 'Y'<br>
+    <input type="checkbox" name="a6G" value="C"> G. 'F'<br>
+    <input type="checkbox" name="a6H" value="C"> H. 'U'<br>
+    <br><br>
+
+    <button type="button" onclick="document.getElementById('results').innerHTML=checkAnswer(), document.getElementById('finalScore').innerHTML=finalScore()">Click!</button>
+    <br><br>
+    <p id="results" style="text-align: left"></p>
+</div>
+</form>
+</body>
+</html>

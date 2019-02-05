@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Brief Introduction about me</title>
+    <link rel="stylesheet" href="bintro.css">
+
+</head>
+<body>
+
+<div class="topnav">
+    <a class="active" href="index.html" title="Home"><img src="img/home.png" height="23" width="32" alt="homeButton"/></a>
+    <a href="bintro.html" title="Brief Introduction"><b>Brief Introduction</b></a>
+    <a href="family.html" title="Family"><b>Family</b></a>
+    <a href="hobbies.html" title="Hobbies"><b>Hobbies</b></a>
+    <a href="animation.html" title="Animation"><b>Animation</b></a>
+</div>
+<style>
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {background-color: #ddd;}
+
+    .dropdown:hover .dropdown-content {display: block;}
+
+    .dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+
+<div class="dropdown">
+    <button class="dropbtn">1st Semester</button>
+    <div class="dropdown-content">
+        <a href="jminiproject.html" title="JavaProjects"><b>JavaProjects</b></a>
+        <a href="binary.html" title="Base Converter"><b>Base Converter</b></a>
+        <a href="calculator.html" title="JavaScript Calculator"><b>JavaScript Calculator</b></a>
+        <a href="madLibs.html" title="Mad Libs"><b>Mad-Libs</b></a>
+        <a href="quiz.html" title="Quiz"><b>Quiz!</b></a>
+    </div>
+</div>
+<h1 style="text-align:center"><b><ins>About me</ins></b></h1>
+
+<p style="text-align:center">Hi, my name is Jin-Kyo Lee, most people call me Jin, and I am 14 years old as of right now and my birthday is on March 22, 2004. I am currently a freshmen in Hoffman Estates High school.</p>
+
+<div>
+
+<figure>
+    <img src="img/hoffmanestates.jpg" class="hoffmanestates">
+    <figcaption  style="text-align: center"><em>Hoffman Estates Highschool</em></figcaption>
+</figure>
+</div>
+
+<p style="text-align:center">An interesting fact about me is that, i've lived in 3 different states so far, New York, New Jersey, and Illinois. I was born and raised in New York until I was 9, then I moved to New Jersey, and when I became 11 years old I moved to Illinois and here I am now.</p>
+
+<figure>
+    <img src="img/InkedMapOfUSA%202.0.jpg" height="272.25" width="505.25" class="map"/>
+        <figcaption style="text-align: center"><em>For you visual people</em></figcaption>
+</figure>
+
+<br>
+
+<p style="text-align:center">I like random stuff so i'll just say what I can come up with. My all time favorite TV show is The Office, I like Coke better then Pepsi and Sprite, If I had to get a console I'd get a switch, the dress is gold and white for me, I'm left handed, My average WPM is 85-90, My personality type is INFP, I weigh around 115 pounds, and that's all for random trivia about me.</p>
+
+<br>
+<br>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="img/officec.jpg" style="width: 100%;" height="900">
+        <div class="text"><b>When Michael left... whoops spoilers</b></div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="img/infp.jpg" style="width:100%" height="650">
+        <div class="text"><b>In case this website wasn't enough</b></div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="img/coke.jpg" style="width:100%" height="850">
+        <div class="coke"><b>Coke>Pepsi & Sprite</b></div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="img/switch.jpg" height="950"  style="width: 100%">
+        <div class="switch"><b>I want it... hype for new smash brothers game</b></div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="img/keyboard.jpg" style="width: 100%" height="960">
+        <div class="text"><b>85-90 slightly above avg, but nothing to brag about</b></div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+
+
+</body>
+</html>

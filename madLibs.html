@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mad-Libs</title>
+    <script src="madLibs.js"></script>
+    <link rel="stylesheet" href="madLibs.css">
+</head>
+<body>
+<div class="topnav">
+    <a class="active" href="index.html" title="Home"><img src="img/home.png" height="23" width="32" alt="homeButton"/></a>
+    <a href="bintro.html" title="Brief Introduction"><b>Brief Introduction</b></a>
+    <a href="family.html" title="Family"><b>Family</b></a>
+    <a href="hobbies.html" title="Hobbies"><b>Hobbies</b></a>
+    <a href="animation.html" title="Animation"><b>Animation</b></a>
+</div>
+<style>
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {background-color: #ddd;}
+
+    .dropdown:hover .dropdown-content {display: block;}
+
+    .dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+
+<div class="dropdown">
+    <button class="dropbtn">1st Semester</button>
+    <div class="dropdown-content">
+        <a href="jminiproject.html" title="JavaProjects"><b>JavaProjects</b></a>
+        <a href="binary.html" title="Base Converter"><b>Base Converter</b></a>
+        <a href="calculator.html" title="JavaScript Calculator"><b>JavaScript Calculator</b></a>
+        <a href="madLibs.html" title="Mad Libs"><b>Mad-Libs</b></a>
+        <a href="quiz.html" title="Quiz"><b>Quiz!</b></a>
+    </div>
+</div>
+<form name="madLibs">
+<h4 style="text-align: center;">Mad-Libs!!</h4>
+<p>Adjective: <input name="input1" type="text" placeholder="write here" style="text-align: center;" size="10"></p>
+<br>
+<p>Adjective: <input name="input2" type="text" placeholder="write here" style="text-align: center;" size="10"></p>
+<br>
+<p>Type of bird: <input name="input3" type="text" placeholder="write here" style="text-align: center;" size="10"></p>
+<br>
+<p>Room in a house: <input name="input4" type="text" placeholder="write here" style="text-align: center;" size="10"></p>
+<br>
+<p>Verb (Past tense): <input name="input5" type="text" placeholder="write here" style="text-align: center;" size="10"></p>
+<br>
+<p>Verb: <input name="input6" type="text" placeholder="write here" style="text-align: center;" size="10"></p>
+<br>
+<p>Relative's name: <input name="input7" type="text" placeholder="write here" style="text-align: center;" size="10"></p>
+<br>
+<p>Noun: <input name="input8" type="text" placeholder="write here" style="text-align: center;" size="10"></p>
+<br>
+<p>A liquid: <input name="input9" type="text" placeholder="write here" style="text-align: center;" size="10"></p>
+<br>
+<p>Verb ending in "ing": <input name="input10" type="text" placeholder="write here" style="text-align: center;" size="10"></p>
+<br>
+<p>Part of the body (plural): <input name="input11" type="text" placeholder="write here" style="text-align: center;" size="10"></p>
+<br>
+<p>Plural noun: <input name="input12" type="text" placeholder="write here" style="text-align: center;" size="10"></p>
+<br>
+
+
+
+    <div id="button"><button type="button" onclick="document.getElementById('story').innerHTML=f()">click</button></div>
+    <p id="story" style="text-align: center;"></p>
+</form>
+</body>
+</html>

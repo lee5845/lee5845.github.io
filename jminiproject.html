@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaMiniProjects</title>
+    <link rel="stylesheet" href="jminiproject.css" > <script src="jminiproject.js"></script>
+</head>
+<body>
+<div class="topnav">
+    <a class="active" href="index.html" title="Home"><img src="img/home.png" height="23" width="32" alt="homeButton"/></a>
+    <a href="bintro.html" title="Brief Introduction"><b>Brief Introduction</b></a>
+    <a href="family.html" title="Family"><b>Family</b></a>
+    <a href="hobbies.html" title="Hobbies"><b>Hobbies</b></a>
+    <a href="animation.html" title="Animation"><b>Animation</b></a>
+</div>
+<style>
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {background-color: #ddd;}
+
+    .dropdown:hover .dropdown-content {display: block;}
+
+    .dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+
+<div class="dropdown">
+    <button class="dropbtn">1st Semester</button>
+    <div class="dropdown-content">
+        <a href="jminiproject.html" title="JavaProjects"><b>JavaProjects</b></a>
+        <a href="binary.html" title="Base Converter"><b>Base Converter</b></a>
+        <a href="calculator.html" title="JavaScript Calculator"><b>JavaScript Calculator</b></a>
+        <a href="madLibs.html" title="Mad Libs"><b>Mad-Libs</b></a>
+        <a href="quiz.html" title="Quiz"><b>Quiz!</b></a>
+    </div>
+</div>
+<form name="project1">
+    <h4>Temperature Bug</h4>
+    <br><br>
+    Put in a temperature in fahrenheits. (I left 2 easter eggs they should be easy to find)
+    <button type="button" onclick="document.project1.result.value = easteregg()"><b>Incase you Can't Find the Easter-Eggs</b></button>
+    <br><br>
+    <input name="input1" type="text" placeholder="put in a number">
+    <br><br>
+    <button type="button" onclick="document.project1.result.value = temperatureBug()">Get your season</button>
+    Result: <input name="result" type="text" readonly="true" style="border-style:none" size="65">
+    <br><br>
+    <img src="img/miniprojectseason/fall.gif" id="temp" height="168.5" width="300">
+</form>
+<br><br>
+<form name="project2">
+<h4>Calories Counter</h4>
+    <br><br>
+    Put in a number then choose one of the activities given
+    <br><br>
+    Activity:<select id="workList">
+        <option value="walking">Walking</option>
+        <option value="running">Running</option>
+        <option value="swimming">Swimming</option>
+        <option value="bowling">Bowling</option>
+        <option value="tv">Watching TV</option>
+    </select>
+    Time in Minutes: <input name="timespent" type="number" placeholder="put in a number">
+    <br><br>
+    <button type="button" onclick="project2.result.value=caloriecounter()">Click</button>
+    Result: <input name="result" readonly="true" style="border-style: none" size="70">
+    <br><br>
+</form>
+<br><br>
+<form name="project3">
+    <h4>Assign Grade</h4>
+    <br><br>
+    Type in a number between 0 and 100.
+    <br><br>
+    <input name="input1" type="text" placeholder="put in a number">
+    <br><br>
+    Result: <input name="result" type="text" readonly="true" style="border-style:none">
+    <button type="button" onclick="document.project3.result.value = assignGrade()">Get your grade</button>
+</form>
+</body>
+</html>

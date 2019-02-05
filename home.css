@@ -1,0 +1,87 @@
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: lightskyblue;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 24px 26px;
+    text-decoration: none;
+    font-size: 25px;;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: royalblue;
+    color: white;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: royalblue;
+    color: white;
+}
+p
+{
+    color: white;
+}
+body
+{
+    background-image: url("img/bluewallpaper.jpeg");
+}
+
+/* The codes that make hyperlinks look colorful are from w3schools */
+li a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+li a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+li a:hover {
+    color: skyblue;
+    background-color: transparent;
+    text-decoration: underline;
+}
+li a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+Ol {
+    color:ghostwhite;
+    font-size: 25px
+}
+h1{
+    font-size: 55px;
+    color: darkblue;
+}
+p  {
+    font-size: 20px
+}
+
+.GooglePic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+figcaption
+{
+    color:darkblue;
+    font-size: 20px
+}
+
+body {font-family: Verdana, sans-serif; margin:1}
+
+
+
+
+
+
